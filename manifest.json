@@ -1,0 +1,11 @@
+{  
+  "name": "test-plugin",  
+  "manifest_version":2, 
+  "version": "0.0.1",  
+  "description": "just test",
+  "browser_action": {  
+    "default_icon": "import.svg" ,
+    "default_title": "test-plugin",
+    "default_popup": "./build/index.html"
+  }
+}
