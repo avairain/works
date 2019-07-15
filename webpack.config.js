@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         test:/\.(jpg|gif|png|bmp|svg)$/,
-        use:'url-loader?limit=1024&name=[hash:7]-[name].[ext]'
+        use:'url-loader?limit=10240&name=[hash:7]-[name].[ext]'
       }
     ]
   },
