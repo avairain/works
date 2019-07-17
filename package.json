@@ -1,10 +1,10 @@
 {
-  "name": "redux-crud",
+  "name": "app",
   "version": "1.0.0",
-  "description": "create, read, update and delete example in Redux",
+  "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arcthur/react-book-examples"
+    "url": ""
   },
   "scripts": {
     "build": "./node_modules/.bin/webpack",

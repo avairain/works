@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Close from '../assets/image/closed.svg'
+import { local } from '../common/js/config'
 
 export default class extends Component {
   constructor() {
@@ -21,7 +22,7 @@ export default class extends Component {
   render() {
     return (
       <div className="login">
-        <header><span>GANet</span><span>登陆</span><span className="border"></span></header>
+        <header><span>{local.loginTitle1}</span><span>{local.loginTitle2}</span><span className="border"></span></header>
         <section>
           <form onSubmit={this.login} ref={el => this.form = el}>
             <div className="input">
@@ -31,10 +32,10 @@ export default class extends Component {
               <input placeholder="Password" type="password" name="password" />
             </div>
             <div className="forgetPassword">
-              忘记密码
+            {local.forgetPassword}
             </div>
             <div className="loginButton">
-              <button>登陆</button>
+              <button>{local.login}</button>
             </div>
           </form>
           <div className="footer">

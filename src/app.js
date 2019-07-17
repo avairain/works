@@ -25,6 +25,7 @@ window._closeMask = function () {
   const timer = setTimeout(() => {
     clearTimeout(timer)
     child.remove()
+    window.removeEventListener('click', window._fn)
   }, 1000)
 }
 render(child)
